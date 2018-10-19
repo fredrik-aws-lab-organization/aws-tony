@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+- source: megatony-1.0-SNAPSHOT.jar
+  destination: /tmp
+hooks:
+  ApplicationStart:
+  - location: start_application.sh
+    timeout: 500
+    runas: root
